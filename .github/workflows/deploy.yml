@@ -28,6 +28,7 @@ jobs:
         run: |
           dotnet restore
           npm install -g serverless
+          dotnet tool install -g Amazon.Lambda.Tools
 
       - name: Build project
         run: dotnet build --configuration Release
