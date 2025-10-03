@@ -1,0 +1,6 @@
+@PokeApiProxy_HostAddress = http://localhost:5156
+
+GET {{PokeApiProxy_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
