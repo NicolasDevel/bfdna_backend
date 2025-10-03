@@ -9,6 +9,8 @@
   <ItemGroup>
     <PackageReference Include="Amazon.Lambda.AspNetCoreServer" Version="9.2.0" />
     <PackageReference Include="Amazon.Lambda.AspNetCoreServer.Hosting" Version="1.9.0" />
+    <PackageReference Include="AWSSDK.DynamoDBv2" Version="4.0.7" />
+    <PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="4.0.3.4" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.20" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>

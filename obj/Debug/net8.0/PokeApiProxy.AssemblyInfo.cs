@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PokeApiProxy")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e45ccd34ed6cacb3c2236fa17ab2d4d2ab79910d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6689f1d5465c79b828ba04e22aebf30f818bcd7")]
 [assembly: System.Reflection.AssemblyProductAttribute("PokeApiProxy")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PokeApiProxy")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

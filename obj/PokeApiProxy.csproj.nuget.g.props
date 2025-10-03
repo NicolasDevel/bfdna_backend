@@ -18,5 +18,7 @@
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">/Users/nicolassabogaltorres/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>
+    <PkgAWSSDK_Core Condition=" '$(PkgAWSSDK_Core)' == '' ">/Users/nicolassabogaltorres/.nuget/packages/awssdk.core/4.0.0.32</PkgAWSSDK_Core>
+    <PkgAWSSDK_DynamoDBv2 Condition=" '$(PkgAWSSDK_DynamoDBv2)' == '' ">/Users/nicolassabogaltorres/.nuget/packages/awssdk.dynamodbv2/4.0.7</PkgAWSSDK_DynamoDBv2>
   </PropertyGroup>
 </Project>
