@@ -1,6 +1,6 @@
 name: Deploy PokeApiProxy
 
-n:
+on:
   pull_request:
     types: [closed]
     branches:
