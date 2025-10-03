@@ -23,6 +23,7 @@ builder.Services.AddMemoryCache();
 //Services
 builder.Services.AddScoped<PokemonCacheService>();
 builder.Services.AddScoped<PokemonService>();
+builder.Services.AddScoped<SuggestionService>();
 
 //Repositories
 builder.Services.AddScoped<DynamoPokemonRepository>();

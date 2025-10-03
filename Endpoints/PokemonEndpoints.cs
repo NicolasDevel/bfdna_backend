@@ -32,5 +32,16 @@ public static class PokemonEndpoints
             var pokemon = await service.GetPokemonByIdAsync(id);
             return pokemon is not null ? Results.Ok(pokemon) : Results.NotFound();
         });
+
+        app.MapGet("/suggestions", async (
+            SuggestionService service,
+            string q,
+            int top = 5,
+            string? type = null,
+            string? ability = null) =>
+        {
+            var results = await service.GetSuggestionsAsync(q, top, type, ability);
+            return Results.Ok(results);
+        });
     }
 }
