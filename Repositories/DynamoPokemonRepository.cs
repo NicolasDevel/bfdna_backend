@@ -61,4 +61,31 @@ public class DynamoPokemonRepository
             Popularity = long.Parse(item["Popularity"].N)
         }).OrderBy(p => p.Id).ToList();
     }
+
+    public async Task<Pokemon?> GetPokemonByIdAsync(int id)
+    {
+        var response = await _dynamoDb.GetItemAsync(new GetItemRequest
+        {
+            TableName = TableName,
+            Key = new Dictionary<string, AttributeValue>
+            {
+                { "Id", new AttributeValue { N = id.ToString() } }
+            }
+        });
+
+        if (response.Item == null || response.Item.Count == 0)
+            return null;
+
+        return new Pokemon
+        {
+            Id = int.Parse(response.Item["Id"].N),
+            Name = response.Item["Name"].S,
+            Types = response.Item.ContainsKey("Types") ? response.Item["Types"].SS : new List<string>(),
+            Abilities = response.Item.ContainsKey("Abilities") ? response.Item["Abilities"].SS : new List<string>(),
+            ImageUrl = response.Item["ImageUrl"].S,
+            LastUpdated = DateTime.Parse(response.Item["LastUpdated"].S),
+            Popularity = long.Parse(response.Item["Popularity"].N)
+        };
+    }
 }
+
