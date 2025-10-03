@@ -1,0 +1,38 @@
+# Archivos de compilación
+bin/
+obj/
+
+# Publicación
+*.zip
+*.tar.gz
+*.tgz
+*.nupkg
+*.snupkg
+
+# Configuración de usuario
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VSCode / Rider
+.vscode/
+.idea/
+
+# Archivos de logs
+*.log
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# Serverless Framework
+.serverless/
+.webpack/
+
+# Archivos de configuración locales
+appsettings.Development.json
+
+# Archivos de pruebas
+TestResults/
+coverage/

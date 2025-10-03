@@ -1,0 +1,19 @@
+service: pokeapiproxy
+
+provider:
+  name: aws
+  runtime: dotnet8
+  region: us-east-1
+  memorySize: 1024
+  timeout: 30
+
+package:
+  artifact: bin/Release/net8.0/publish/pokeapiproxy.zip
+
+functions:
+  api:
+    handler: PokeApiProxy
+    events:
+      - http:
+          path: /{proxy+}
+          method: any
